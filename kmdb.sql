@@ -77,9 +77,9 @@ DROP TABLE IF EXISTS
 CREATE TABLE Movie (
     id INTEGER PRIMARY KEY AUTOINCREMENT 
     movie_title TEXT,
-    director TEXT,
+    year_released TEXT,
     mpaa_rating TEXT,
-    year_released TEXT
+    director TEXT
 )
 
 CREATE TABLE Characters (
@@ -89,10 +89,17 @@ CREATE TABLE Characters (
     movie_id INTEGER
 )
 
-
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
+
+UPDATE Movie
+SET movie_title = "Batman Begins"
+SET year_released = "2005"
+SET mpaa_rating = "PG-13"
+SET director = "Christopher Nolan"
+WHERE id = 1;
+
 
 -- Prints a header for the movies output
 .print "Movies"
