@@ -69,8 +69,8 @@
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
 
-DROP TABLE Movie IF EXISTS
-DROP TABLE Characters IF EXISTS 
+DROP TABLE IF EXISTS Movie;
+DROP TABLE IF EXISTS Characters; 
 
 -- Create new tables, according to your domain model
 -- TODO!
@@ -78,7 +78,7 @@ DROP TABLE Characters IF EXISTS
 CREATE TABLE Movie (
     id INTEGER PRIMARY KEY AUTOINCREMENT, 
     movie_title TEXT,
-    year_released TEXT,
+    year_released INTEGER,
     mpaa_rating TEXT,
     director TEXT
 );
@@ -96,10 +96,48 @@ CREATE TABLE Characters (
 
 UPDATE Movie
 SET movie_title = "Batman Begins"
- year_released = "2005"
- mpaa_rating = "PG-13"
- director = "Christopher Nolan"
 WHERE id = 1;
+UPDATE Movie
+SET year_released = "2005"
+WHERE id = 1;
+UPDATE Movie
+SET mpaa_rating = "PG-13"
+WHERE id = 1;
+UPDATE Movie
+SET director = "Christopher Nolan"
+WHERE id = 1;
+
+UPDATE Movie
+SET movie_title = "The Dark Knight"
+WHERE id = 2;
+UPDATE Movie
+SET year_released = "2008"
+WHERE id = 2;
+UPDATE Movie
+SET mpaa_rating = "PG-13"
+WHERE id = 2;
+UPDATE Movie
+SET director = "Christopher Nolan"
+WHERE id = 2;
+
+UPDATE Movie
+SET movie_title = "The Dark Knight Rises"
+WHERE id = 3;
+UPDATE Movie
+SET year_released = "2012"
+WHERE id = 3;
+UPDATE Movie
+SET mpaa_rating = "PG-13"
+WHERE id = 3;
+UPDATE Movie
+SET director = "Christopher Nolan"
+WHERE id = 3;
+
+UPDATE Characters
+SET actor_name = "Christian Bale"
+WHERE id = 1
+UPDATE Characters
+SET character_name 
 
 
 -- Prints a header for the movies output
