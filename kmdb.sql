@@ -135,10 +135,153 @@ WHERE id = 3;
 
 UPDATE Characters
 SET actor_name = "Christian Bale"
-WHERE id = 1
+WHERE id = 1;
 UPDATE Characters
-SET character_name 
+SET character_name = "Bruce Wayne"
+WHERE id = 1;
+UPDATE Characters
+SET movie_id = "1"
+WHERE id = 1;
 
+UPDATE Characters
+SET actor_name = "Michael Caine"
+WHERE id = 2;
+UPDATE Characters
+SET character_name = "Alfred"
+WHERE id = 2;
+UPDATE Characters
+SET movie_id = "1"
+WHERE id = 2;
+
+UPDATE Characters
+SET actor_name = "Liam Neeson"
+WHERE id = 3;
+UPDATE Characters
+SET character_name = "Ra's Al Ghul"
+WHERE id = 3;
+UPDATE Characters
+SET movie_id = "1"
+WHERE id = 3;
+
+UPDATE Characters
+SET actor_name = "Katie Holmes"
+WHERE id = 4;
+UPDATE Characters
+SET character_name = "Rachel Dawes"
+WHERE id = 4;
+UPDATE Characters
+SET movie_id = "1"
+WHERE id = 4;
+
+UPDATE Characters
+SET actor_name = "Gary Oldman"
+WHERE id = 5;
+UPDATE Characters
+SET character_name = "Commissioner Gordon"
+WHERE id = 5;
+UPDATE Characters
+SET movie_id = "1"
+WHERE id = 5;
+
+UPDATE Characters
+SET actor_name = "Christian Bale"
+WHERE id = 6;
+UPDATE Characters
+SET character_name = "Bruce Wayne"
+WHERE id = 6;
+UPDATE Characters
+SET movie_id = "2"
+WHERE id = 6;
+
+UPDATE Characters
+SET actor_name = "Heath Ledger"
+WHERE id = 7;
+UPDATE Characters
+SET character_name = "Joker"
+WHERE id = 7;
+UPDATE Characters
+SET movie_id = "2"
+WHERE id = 7;
+
+UPDATE Characters
+SET actor_name = "Aaron Eckhart"
+WHERE id = 8;
+UPDATE Characters
+SET character_name = "Harvey Dent"
+WHERE id = 8;
+UPDATE Characters
+SET movie_id = "2"
+WHERE id = 8;
+
+UPDATE Characters
+SET actor_name = "Michael Caine"
+WHERE id = 9;
+UPDATE Characters
+SET character_name = "Alfred"
+WHERE id = 9;
+UPDATE Characters
+SET movie_id = "2"
+WHERE id = 9;
+
+UPDATE Characters
+SET actor_name = "Maggie Gyllenhaal"
+WHERE id = 10;
+UPDATE Characters
+SET character_name = "Rachel Dawes"
+WHERE id = 10;
+UPDATE Characters
+SET movie_id = "2"
+WHERE id = 10;
+
+UPDATE Characters
+SET actor_name = "Christian Bale"
+WHERE id = 11;
+UPDATE Characters
+SET character_name = "Bruce Wayne"
+WHERE id = 11;
+UPDATE Characters
+SET movie_id = "3"
+WHERE id = 11;
+
+UPDATE Characters
+SET actor_name = "Gary Oldman"
+WHERE id = 12;
+UPDATE Characters
+SET character_name = "Commissioner Gordon"
+WHERE id = 12;
+UPDATE Characters
+SET movie_id = "3"
+WHERE id = 12;
+
+UPDATE Characters
+SET actor_name = "Tom Hardy"
+WHERE id = 13;
+UPDATE Characters
+SET character_name = "Bane"
+WHERE id = 13;
+UPDATE Characters
+SET movie_id = "3"
+WHERE id = 13;
+
+UPDATE Characters
+SET actor_name = "Joseph Gordon-Levitt"
+WHERE id = 14;
+UPDATE Characters
+SET character_name = "John Blake"
+WHERE id = 14;
+UPDATE Characters
+SET movie_id = "3"
+WHERE id = 14;
+
+UPDATE Characters
+SET actor_name = "Anne Hathaway"
+WHERE id = 15;
+UPDATE Characters
+SET character_name = "Selina Kyle"
+WHERE id = 15;
+UPDATE Characters
+SET movie_id = "3"
+WHERE id = 15;
 
 -- Prints a header for the movies output
 .print "Movies"
