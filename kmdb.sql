@@ -138,3 +138,6 @@ FROM Movie;
 -- The SQL statement for the cast output
 -- TODO!
 
+.width 25 21 20
+SELECT Movie.movie_title, Characters.actor_name, Characters.character_name
+FROM Movie INNER JOIN Characters ON Movie.id = Characters.movie_id;
