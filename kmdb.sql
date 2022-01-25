@@ -69,25 +69,26 @@
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
 
-DROP TABLE IF EXISTS 
+DROP TABLE Movie IF EXISTS
+DROP TABLE Characters IF EXISTS 
 
 -- Create new tables, according to your domain model
 -- TODO!
 
 CREATE TABLE Movie (
-    id INTEGER PRIMARY KEY AUTOINCREMENT 
+    id INTEGER PRIMARY KEY AUTOINCREMENT, 
     movie_title TEXT,
     year_released TEXT,
     mpaa_rating TEXT,
     director TEXT
-)
+);
 
 CREATE TABLE Characters (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     actor_name TEXT,
     character_name TEXT,
     movie_id INTEGER
-)
+);
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
@@ -95,9 +96,9 @@ CREATE TABLE Characters (
 
 UPDATE Movie
 SET movie_title = "Batman Begins"
-SET year_released = "2005"
-SET mpaa_rating = "PG-13"
-SET director = "Christopher Nolan"
+ year_released = "2005"
+ mpaa_rating = "PG-13"
+ director = "Christopher Nolan"
 WHERE id = 1;
 
 
