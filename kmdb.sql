@@ -65,7 +65,6 @@
 -- Turns column mode on but headers off
 .mode column
 .headers off
-.width 25 4 5 17 
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
@@ -125,6 +124,7 @@ VALUES ("Christian Bale", "Bruce Wayne", "1"),
 -- The SQL statement for the movies output
 -- TODO!
 
+.width 25 4 5 17 
 SELECT movie_title, year_released, mpaa_rating, director 
 FROM Movie;
 
